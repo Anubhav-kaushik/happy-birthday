@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .svg {
     height: 100vh;
     display: flex;
@@ -9,13 +14,80 @@ svg {
     height: 100%;
 }
 
+
 h1 {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    transition: all 1s;
+    text-align: center;
+    display: block;
+    height: 1.2em;
+    white-space: nowrap;
+    animation: visiblity 5s ease-in-out forwards, blink 0.5s infinite;
+    overflow: hidden;
+    color: #e3417a;
+}
+
+@keyframes visiblity {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.wishes {
+    margin: 1.5% auto;
+    display: block;
+    width: 34%;
+    margin: 10px auto;
+}
+
+.slider {
+    display: inline-block;
+    height: 2.5em;
+}
+
+@keyframes blink {
+    from {
+        border-right: hidden;
+    }
+    to {
+        border-right: 2px solid black;
+    }
 }
 
 .hide {
     display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .wishes {
+        width: 90%;
+        margin-top: 10vh;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 5.5vw;
+    }
+
+    svg {
+        margin-top: 
+    }
+
+    .text {
+        width: 90%;
+        color: #b7225c;
+        margin-top: -40%;
+        text-align: center;
+    }
+}
+
+.text {
+    width: 90%;
+    color: #b7225c;
+    margin-top: -5%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
