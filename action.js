@@ -9,7 +9,7 @@ async function sleep(ms) {
 
 async function action() {
     const allEle = [one, two, three, four];
-    const times = [0, 0, 0, 0];
+    const times = [5000, 5000, 5000, 5000];
 
     for (let i = 0; i < allEle.length; i++) {
         i.classList.toggle('hide');
